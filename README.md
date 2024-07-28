@@ -1,5 +1,6 @@
 # RK Maps [![APACHE2.0 License](https://img.shields.io/badge/License-APACHE%202.0-green.svg)](https://choosealicense.com/licenses/apache-2.0/)
 This is a simple HTML project which demonstrates the use of a few Google Maps Platform APIs.
+
 We have used the Places API, GeoCode API, Maps API mainly in this project.
 
 ## Setup
@@ -17,7 +18,11 @@ Navigate to your code folder and run a terminal command as below to bring a loca
 ```
 
 ## API KEY
-In maps-demo.html please replace the key=APIKEY to your actual API key
+In maps-demo.html please replace the key=APIKEY to your actual API key.
+
+You may check this google documentation for the same.
+
+[Maps API Key Generation](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
 ## Features:
 - Restricted to India for demo purposes.
@@ -45,3 +50,7 @@ In maps-demo.html please replace the key=APIKEY to your actual API key
 
 ## Screenshots
 ![App Screenshot](https://rkshenoy.in/rkmaps/1.png)
+
+## References
+
+[Google Places Autocomplete](https://developers.google.com/maps/documentation/javascript/place-autocomplete)
