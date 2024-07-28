@@ -17,7 +17,7 @@ Navigate to your code folder and run a terminal command as below to bring a loca
 ```
 
 ## API KEY
-In maps-demo.html please replace the google provided dev API Key to your actual API key
+In maps-demo.html please replace the key=APIKEY to your actual API key
 
 ## Features:
 - Restricted to India for demo purposes.
