@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <title>Place Autocomplete Address Form</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <p class="title">Address form for India</p>
+  <p class="note"><em>* = required field</em></p>
+
+  <div class="grid-container">
+
+    <div class="grid-child">
+      <label class="full-field">
+        <span class="form-label">Search Address</span>
+        <input type="search" id="ship-address" name="ship-address" autocomplete="off" />
+        <div id="map"></div>
+        <div id="infowindow-content">
+          <span id="place-name" class="title"></span><br />
+          <strong>Place ID</strong>: <span id="place-id"></span><br />
+          <span id="place-address"></span>
+        </div>
+      </label>
+    </div>
+    <div class="grid-child">
+      <form id="address-form" action="" method="get" autocomplete="off">
+        <label class="full-field">
+          <span class="form-label">Country/Region*</span>
+          <p class="note"><em> Currently we support only Indian Region</em></p>
+          <select name="country" id="country" disabled>
+            <option value="">--Please choose an option--</option>
+            <option value="IN" selected>India</option>
+          </select>
+        </label>
+        <label class="full-field">
+          <span class="form-label">Door No/Premise*</span>
+          <input id="premise" name="premise" />
+        </label>
+        <label class="full-field">
+          <span class="form-label">Street Address 1</span>
+          <input id="address1" name="address1" />
+        </label>
+        <label class="full-field">
+          <span class="form-label">Sub Area/Address Line 2*</span>
+          <input id="sublocality2" name="sublocality2" />
+        </label>
+        <label class="full-field">
+          <span class="form-label">Post/Area*</span>
+          <input id="sublocality1" name="sublocality1" />
+        </label>
+        <label class="full-field">
+          <span class="form-label">City*</span>
+          <input id="city" name="city" required />
+        </label>
+        <label class="full-field">
+          <span class="form-label">District*</span>
+          <input id="district" name="district" required />
+        </label>
+        <label class="slim-field-start">
+          <span class="form-label">State*</span>
+          <input id="state" name="state" required />
+        </label>
+        <label class="slim-field-end" for="postal_code">
+          <span class="form-label">Postal code*</span>
+          <input id="postcode" name="postcode" required />
+        </label>
+        <button type="button" id="saveAddress" name="saveAddress" class="my-button">Save address</button>
+      </form>
+    </div>
+
+    <div class="grid-child">
+      <p id="address"></p>
+    </div>
+
+
+  </div>
+
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&loading=async&callback=initMap&callback=initAutocomplete&libraries=places,marker&v=weekly"></script>
+</body>
+
+</html>
