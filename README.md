@@ -34,9 +34,10 @@ You may check this google documentation for the same.
 
 ## Other Learnings:
 - India Latitude Longitude can be set as 22.65143151550798, 79.34627909691477
-- Learned and generated maps API key and restricted it to my website only and for the places API, Geocoding and Maps API only.
+- Learned and generated maps API key and restricted it to my website only and for the Places API, Geocoding and Maps API only.
 - Learned how to show map and change markers on the map
 - Learned how to capture click events and get details from the map.
+- Adding Quotas and Budgeting Alerts for APIs used.
 
 ## Improvements:
 - Clear form option can be provided.
