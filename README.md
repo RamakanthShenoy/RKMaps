@@ -39,7 +39,7 @@ You may check this google documentation for the same.
 - Learned how to capture click events and get details from the map.
 - Adding Quotas and Budgeting Alerts for APIs used.
 
-## Improvements:
+## Future Improvements:
 - Clear form option can be provided.
 - Can open up for US and dynamically change address form fields for US context.
 - Additional non conventional fields like - Landmark, phone can be added.
